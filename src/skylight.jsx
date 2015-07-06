@@ -69,7 +69,7 @@ var SkyLight = React.createClass({
         }
 
         if (this.props.showOverlay) {
-            overlay = (<div style={overlayStyles}></div>);
+            overlay = (<div onClick={this.hide} style={overlayStyles}></div>);
         }
 
         return (
